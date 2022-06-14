@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "block_collections",
+  "info": {
+    "singularName": "block-collection",
+    "pluralName": "block-collections",
+    "displayName": "Block Collection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "study_sites": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::study-site.study-site",
+      "inversedBy": "block_collections"
+    }
+  }
+}

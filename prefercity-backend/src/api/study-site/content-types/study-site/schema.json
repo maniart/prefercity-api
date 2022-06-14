@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "study_sites",
+  "info": {
+    "singularName": "study-site",
+    "pluralName": "study-sites",
+    "displayName": "Study Site",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "lattitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "radius": {
+      "type": "float"
+    },
+    "client_organization": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::client.client",
+      "inversedBy": "study_sites"
+    },
+    "block_collections": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::block-collection.block-collection",
+      "inversedBy": "study_sites"
+    }
+  }
+}

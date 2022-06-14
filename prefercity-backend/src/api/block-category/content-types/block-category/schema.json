@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "block_categories",
+  "info": {
+    "singularName": "block-category",
+    "pluralName": "block-categories",
+    "displayName": "Block Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "blocks": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::block.block",
+      "inversedBy": "block_categories"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "submissions",
+  "info": {
+    "singularName": "submission",
+    "pluralName": "submissions",
+    "displayName": "submission",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "longitude": {
+      "type": "float",
+      "default": 0
+    },
+    "lattitude": {
+      "type": "float",
+      "default": 0
+    },
+    "zipcode": {
+      "type": "integer",
+      "default": 10011
+    },
+    "email": {
+      "type": "email"
+    },
+    "age_group": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::age-group.age-group"
+    },
+    "ethnicity": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ethnicity.ethnicity"
+    },
+    "income_group": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::income-group.income-group"
+    }
+  }
+}

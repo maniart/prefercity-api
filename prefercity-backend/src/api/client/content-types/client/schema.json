@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "singularName": "client",
+    "pluralName": "clients",
+    "displayName": "Client Organization",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "study_sites": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::study-site.study-site",
+      "mappedBy": "client_organization"
+    }
+  }
+}

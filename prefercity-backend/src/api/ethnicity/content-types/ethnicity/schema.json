@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ethnicities",
+  "info": {
+    "singularName": "ethnicity",
+    "pluralName": "ethnicities",
+    "displayName": "Ethnicity"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ethnicity": {
+      "type": "string"
+    }
+  }
+}
