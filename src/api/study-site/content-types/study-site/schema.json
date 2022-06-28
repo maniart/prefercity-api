@@ -41,6 +41,10 @@
       "relation": "manyToMany",
       "target": "api::block-collection.block-collection",
       "inversedBy": "study_sites"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
