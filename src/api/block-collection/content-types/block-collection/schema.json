@@ -24,7 +24,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::study-site.study-site",
-      "inversedBy": "block_collections"
+      "mappedBy": "block_collections"
     }
   }
 }
